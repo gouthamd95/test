@@ -1,0 +1,279 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin:0px auto;
+}
+.container{
+    width:70%;
+    height:100%;
+    margin: 0px atuo;
+}
+
+.head{
+    height:100%;
+    width: 100%;
+    background-image: url("../images/background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.container{
+   display: flex;
+  height:100%;
+    width: 100%;
+    background-color: rgba(66, 10, 221, 0.7);
+}
+.inner-container{
+    height:100%;
+    width: 70%;
+}
+.logo{
+    width: 15%;
+    margin:0px auto;
+    padding: 5px 0px 5px 0px;
+    height:50px;    
+    background-color:rgb(234, 234, 225);
+    border-radius: 0px 0px 30px 30px;
+}
+.logo img{
+    
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+}
+
+.nav{
+    width: 100%;
+}
+
+.menu{
+    width:50%;
+    float: left;
+} 
+
+.menu ul{
+    padding:15px;
+}
+.menu ul li{
+    display: inline;
+    margin:0px 15px;
+    font-size: .8em;
+    padding:0px 5px 5px 5px;
+    color:rgb(234, 234, 225);
+}
+
+.menu ul li a{
+    color:rgb(234, 234, 225);
+}
+.nav ul li:hover{
+    border-bottom: 3px solid rgb(234, 234, 225);
+}
+.search{
+    width:50%;
+    float:right;
+}
+.search input{
+    width:40%;
+    height: 27px;
+    font-size: 1 em;
+    float: right;
+    border-radius: 20px 20px 20px 20px;
+    border-style: none;
+    display: block;
+    margin: 10px auto; 
+    outline-style: none;
+    padding: 0px 0px 0px 10px;   
+}
+
+.cont{
+    width: 100%;
+    clear: both;
+    padding:60px 110px 50px 110px;
+}
+.cont p{
+    color:rgb(234, 234, 225);
+}
+ .p1{
+    font-size: 27px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    
+}
+.p2{
+    font-size: 13px;
+    padding:0px 40px;
+    text-align: center;
+}
+
+.icon{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.icons { 
+    color: #ffff00; 
+    text-align: center;
+} 
+.fa{ 
+    font-size: 60px;
+} 
+i:hover{
+    text-shadow: 4px 4px 4px rgba(66, 10, 221, 0.9);
+    
+}
+.icon-head-text{
+    color:rgb(234, 234, 225);
+    font-weight: bold;
+    font-size: .9em;
+    padding:5px;
+}
+
+.icon-text{
+    color:rgb(234, 234, 225);
+    font-size: .7em;
+    
+}
+.logs{
+    clear: both;
+    width: 80%;
+    display: flex;
+    margin:0px auto;
+    padding:20px 150px;
+    margin-bottom: 130px;
+}
+    .logs button {
+        width: 100%;
+        padding: 5px 60px;
+        background: transparent;
+        height: 30px;
+        border:2px solid rgb(234, 234, 225);
+        border-radius: 20px;
+        outline: none;
+        color:rgb(234, 234, 225);
+        font-size: 0.8 em;
+   }
+
+   .logs button:hover {
+    background-color: rgb(234, 234, 225);
+    color: rgba(66, 10, 221, 0.7);
+   }
+.content{
+    clear: both;
+    height:100%;
+    background-color:  rgb(234, 234, 225);
+    width:100%;
+    padding:30px 10px;
+}
+
+.content-heading{
+    width:100%;
+    padding:20px;
+}
+.p3{
+    font-size: 27px;
+    font-style: italic;
+    font-weight: bold;
+}
+.p4{
+    font-size: .8em;
+    padding:20px 70px 20px 0px;
+    color:rgb(173, 173, 133);
+}
+
+
+.articles{
+    display: flex;
+
+}
+
+.article {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 40%;
+    border-radius: 5px;
+    margin:10px 0px 10px 10px;
+  }
+  
+   .article:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+   
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+.p5{
+    font-size: 12px;
+    font-weight: bold;
+    padding:2px 5px;
+  }
+
+  .p6{
+      font-size: 10px;
+      padding:2px 5px;
+  }
+
+
+.footer{
+    width:100%;
+    background-color: black;
+    color:#ffffff;
+    padding:10px;
+    text-align: center;
+}
+.header{
+    display: none;
+}
+
+
+
+
+  @media only screen and (max-width: 800px){
+
+    .header{
+        display: block;
+        width:100%;
+        height: auto;
+        background-color: rgb(234, 234, 225);
+        color:#ffffff;
+        padding:10px;
+        text-align: center;
+    }
+    .cont{
+        padding: 0px;
+    }
+    .logs{
+        padding:0px;
+    }
+    .logo{
+        display: none;
+    }
+    .icon{
+        flex-direction: column;
+    } 
+    
+    .button{
+        display: block;
+        margin: 10px;
+        padding: 0px;}
+    .nav{
+        display: none;
+    }
+    
+    .icons{
+        margin: 20px;
+    }
+    .article{
+        width:100%;
+    }
+    .articles{
+        flex-direction: column;
+    }
+    .logs{
+        flex-direction: column;
+        display: block;
+        margin:40px auto;
+    }
+  }
